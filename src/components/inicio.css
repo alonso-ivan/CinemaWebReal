@@ -1,0 +1,848 @@
+
+
+.b_inicio {
+    background-color: #25262E;
+}
+
+
+.i {
+    width: 170px;  /* Ancho fijo */
+    height: 100px; /* Alto fijo, ajusta según sea necesario */
+    object-fit: contain; /* Mantiene la relación de aspecto sin distorsionar la imagen */
+    max-width: none; /* Asegura que no se reduzca más allá del tamaño especificado */
+    max-height: none; /* Asegura que no se reduzca más allá del tamaño especificado */
+}
+
+
+
+.li_inicio {
+    padding-left: 30px;
+}
+
+.username_inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.username_inicio img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.box_search{
+    border-radius: 50px;
+    background: linear-gradient(to right, #FE532E, #F09619);
+    border-color: #25262E;
+    font-weight: bold;
+    color: black;
+    width: 273px;
+    height: 43px;
+}
+
+.box_search:focus {
+    color: black; /* Mantiene el texto blanco cuando se enfoca */
+    outline: none; /* Elimina el borde de enfoque */
+}
+
+.top_peliculas{
+    color: #fff;
+}
+
+
+.top_peliculas {
+    padding: 20px;
+    
+}
+
+.peliculas-container {
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos se envuelvan en la siguiente línea */
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.pelicula-item {
+    flex: 0 0 auto; /* Evita que los elementos se reduzcan o se expandan */
+    margin-right: 20px; /* Espacio entre elementos */
+    text-align: center; /* Centra el texto y la imagen */
+    margin-right: 50px;
+}
+
+.peliculas-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.top_series{
+    color: #fff;
+}
+
+
+.top_series {
+    padding: 20px;
+}
+
+.series-container {
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos se envuelvan en la siguiente línea */
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.serie-item {
+    flex: 0 0 auto; /* Evita que los elementos se reduzcan o se expandan */
+    margin-right: 20px; /* Espacio entre elementos */
+    text-align: center; /* Centra el texto y la imagen */
+    margin-right: 50px;
+}
+
+.series-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo{
+    margin-left: 75px;
+}
+
+
+/* Estilos para el div .recomendación */
+
+
+.btn_inicio{
+    color: black;
+    background: linear-gradient(to right, #FE532E, #F09619);
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    margin-top: 27px;
+    margin-bottom: 27px;
+    height: 48px;
+    width: 166px;
+    font-weight: bold;
+}
+
+
+.detalles{
+    color: #fff;
+}
+
+
+
+.genero{
+    font-size: 16px;
+}
+
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px; /* Tamaño máximo para el modal */
+    text-align: center;
+    position: relative;
+}
+
+/* Botón de cierre del modal */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* Cambiar color al pasar el ratón sobre el botón de cierre */
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.añadir_ver {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    display: flex; /* Utiliza flexbox para alinear los elementos en una línea */
+    gap: 10px; /* Añade espacio entre los elementos, ajusta el valor según sea necesario */
+  }
+  
+  .ul_añadir {
+    display: flex; /* Asegura que los elementos hijos dentro de li se mantengan alineados */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+  }
+  
+  .btn_li {
+    border: none; /* Elimina el borde por defecto de los botones */
+    background: none; /* Elimina el fondo por defecto de los botones */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+  }
+
+
+  .blanco{
+    color: #fff;
+    list-style: none;
+
+  }
+
+  .container-custom {
+    max-width: 70%; /* Ajusta el ancho según tus necesidades */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    
+    padding: 1rem; /* Espacio interno */
+}
+
+.navbar-nav .li_inicio {
+    margin-left: 1rem; /* Espacio entre los elementos de navegación */
+}
+
+.navbar-nav .link_inicio {
+    color: #ffffff; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    transition: color 0.3s ease; /* Transición suave para hover */
+}
+
+.navbar-nav .link_inicio:hover {
+    background: linear-gradient(to right, #FE532E, #F09619); /* Gradiente de color */
+    -webkit-background-clip: text; /* Recortar el fondo al texto para navegadores WebKit */
+    -moz-background-clip: text; /* Recortar el fondo al texto para navegadores Mozilla */
+    background-clip: text; /* Recortar el fondo al texto */
+    color: transparent; /* Hacer el color del texto transparente para mostrar el gradiente */
+
+}
+
+.username_inicio {
+    display: flex; /* Flex para alinear elementos horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-end; /* Alinear al final de la fila */
+}
+
+.username_inicio .blanco {
+    color: #ffffff; /* Color del texto para el nombre de usuario */
+    margin-right: 1rem; /* Espacio a la derecha del nombre */
+}
+
+.username_inicio .btn-link {
+    background: linear-gradient(to right, #FE532E, #F09619); /* Gradiente de color */
+    -webkit-background-clip: text; /* Recortar el fondo al texto para navegadores WebKit */
+    -moz-background-clip: text; /* Recortar el fondo al texto para navegadores Mozilla */
+    background-clip: text; /* Recortar el fondo al texto */
+    color: transparent; /* Hacer el color del texto transparente para mostrar el gradiente */
+    font-weight: bold;
+    text-decoration: none; /* Sin subrayado */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    transition: color 0.3s ease; /* Transición suave para hover */
+}
+
+.username_inicio .btn-link:hover {
+    color: #ffffff; /* Cambiar color al pasar el ratón */
+}
+
+/* Estilos para el buscador */
+.box_search {
+    border-radius: 25px; /* Bordes redondeados */
+    border: none; /* Sin bordes */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    transition: box-shadow 0.3s ease; /* Transición suave para el efecto de sombra */
+}
+
+.box_search:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra al hacer foco */
+    outline: none; /* Sin borde de enfoque */
+}
+
+/* Estilos para el botón del toggler (versión móvil) */
+.navbar-toggler {
+    border: none; /* Sin borde */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Color del icono */
+    border-radius: 2px; /* Bordes redondeados */
+    padding: 0.25rem; /* Espaciado interno */
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-top: 1rem; /* Espacio superior */
+    }
+
+    .username_inicio {
+        justify-content: center; /* Centrar contenido en móviles */
+        margin-top: 1rem; /* Espacio superior */
+    }
+
+    .navbar-nav .li_inicio {
+        margin: 0.5rem 0; /* Espacio entre elementos de la lista en móviles */
+    }
+}
+
+
+/* Asegura que html y body ocupen toda la pantalla sin margen ni padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/* Establece un fondo de color para toda la página */
+body {
+    background-color:#25262E; /* Cambia este color según tus necesidades */
+}
+
+/* Modifica la clase detalles para usar todo el ancho y alto disponibles */
+.detalles {
+    background-color: #25262E; /* Asegúrate de que este color coincida con el del body */
+    min-height: 100vh; /* Asegura que el contenedor cubra al menos toda la altura de la ventana */
+    width: 100%; /* Asegura que el contenedor use todo el ancho disponible */
+}
+
+.series-container {
+    display: flex;
+    overflow-x: auto; /* Habilita el scroll horizontal */
+    scroll-snap-type: x mandatory; /* Usa scroll snap para una mejor experiencia de usuario */
+    padding-bottom: 16px; /* Agrega espacio para el scrollbar */
+    gap: 16px; /* Espacio entre elementos */
+    
+}
+
+/* Cada elemento dentro del contenedor */
+.pelicula-item, .serie-item {
+    scroll-snap-align: start; /* Alinea al principio del contenedor */
+    flex-shrink: 0; /* Evita que los elementos se encojan */
+}
+
+/* Estilos personalizados para el scrollbar */
+.series-container::-webkit-scrollbar {
+    height: 12px; /* Altura del scrollbar */
+}
+
+.series-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo del track */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.series-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del thumb */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 3px solid #f1f1f1; /* Espacio alrededor del thumb */
+}
+
+.series-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del thumb al hacer hover */
+}
+
+
+.row{
+    color: #fff;
+}
+
+/* Estilo para el botón con gradiente */
+.btn-open-modal {
+    background: linear-gradient(to right, #FE532E, #F09619); /* Gradiente de color */
+    border: none;
+    border-radius: 50%; /* Para hacer el botón redondo, puedes ajustar según prefieras */
+    color: white; /* Color del icono si es necesario */
+    padding: 10px; /* Ajusta el padding según el tamaño del icono */
+    font-size: 24px; /* Tamaño del icono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición para un efecto suave */
+}
+
+.btn-open-modal:hover {
+    background: linear-gradient(to right, #F09619, #FE532E); /* Inversión del gradiente en hover */
+}
+
+/* Estilo opcional para el icono, si es necesario */
+.btn-open-modal .icon {
+    font-size: 24px; /* Ajusta el tamaño del icono si es necesario */
+}
+/* Estilo para el botón de la lista */
+.btn_li {
+    background: linear-gradient(to right, #FE532E, #F09619); /* Gradiente de color */
+    border: none;
+    border-radius: 50%; /* Ajusta si prefieres otro estilo */
+    color: white; /* Color del icono */
+    padding: 10px; /* Ajusta el padding según el tamaño del icono */
+    font-size: 24px; /* Tamaño del icono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición para un efecto suave */
+}
+
+.btn_li:hover {
+    background: linear-gradient(to right, #F09619, #FE532E); /* Inversión del gradiente en hover */
+}
+
+/* Opcional: Estilo del icono */
+.btn_li .icon {
+    font-size: 24px; /* Ajusta el tamaño del icono si es necesario */
+}
+
+
+/* Estilo para la lista de añadir/ver */
+.añadir_ver {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 10px; /* Espacio entre los elementos de la lista */
+}
+
+/* Estilo para cada elemento de la lista */
+.ul_añadir {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para el enlace */
+.ul_añadir a {
+    color: #FE532E; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre el icono y el texto */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+/* Cambia el color del enlace en hover */
+.ul_añadir a:hover {
+    color: #F09619; /* Color del texto en hover */
+}
+
+/* Estilo para el icono dentro del enlace */
+.ul_añadir a svg {
+    font-size: 20px; /* Tamaño del icono */
+}
+
+
+.espacio{
+    margin-top: 50px;
+}
+
+
+
+.btn_li{
+    margin-top: 20px;
+}
+
+.a_peli{
+    margin-top: 20px;
+}
+
+
+/* Asegura que la imagen no sea demasiado pequeña */
+.img-fluid {
+    max-width: 100%; /* La imagen no excederá el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+    min-width: 289px; /* Ancho mínimo de la imagen */
+    min-height: 316px; /* Altura mínima de la imagen */
+}
+
+/* Contenedor de la fila, asegurando que los elementos se alineen horizontalmente */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+}
+
+/* Asegura que la columna de la imagen y el texto ocupen el espacio adecuado */
+.col-4 {
+    flex: 1 1 30%; /* La columna de la imagen ocupa aproximadamente el 30% del contenedor */
+    max-width: 30%; /* No excede el 30% del ancho del contenedor */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente dentro de la columna */
+    align-items: center; /* Centra la imagen verticalmente dentro de la columna */
+}
+
+.col-4 img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la columna */
+    height: auto; /* Mantiene la proporción de la imagen */
+    min-width: 289px; /* Ancho mínimo de la imagen */
+    min-height: 316px; /* Altura mínima de la imagen */
+}
+
+.col-8 {
+    flex: 1 1 70%; /* La columna de texto ocupa aproximadamente el 70% del contenedor */
+    max-width: 70%; /* No excede el 70% del ancho del contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente dentro de la columna */
+    align-items: flex-start; /* Alinea el contenido al inicio horizontalmente */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 15px; /* Espacio alrededor del contenido */
+}
+
+/* Espaciado para los encabezados y párrafos */
+.h6_detalles, .h3 {
+    margin: 0 0 10px 0; /* Margen inferior para separar los elementos */
+}
+
+
+
+/* Diseño para pantallas medianas y pequeñas */
+@media (max-width: 992px) { /* Pantallas medianas y pequeñas */
+    .row {
+        flex-direction: column; /* Coloca los elementos en columna */
+    }
+
+    .col-4, .col-8 {
+        width: 100%; /* Asegura que ambas columnas ocupen el ancho completo */
+        max-width: 100%; /* No excede el ancho completo del contenedor */
+    }
+
+    .col-4 {
+        margin-bottom: 20px; /* Espacio debajo de la imagen */
+    }
+
+    .col-8 {
+        padding-left: 0; /* Elimina el relleno izquierdo para pantallas más pequeñas */
+    }
+}
+
+
+/* Contenedor de la lista de películas */
+.movie-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Crea columnas automáticas con un ancho mínimo de 200px */
+    gap: 70px; /* Espacio entre los elementos de la cuadrícula */
+    justify-content: center; /* Centra la cuadrícula horizontalmente */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Contenedor de cada película */
+.movie-item {
+    text-align: center; /* Centra el texto dentro de cada elemento */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos dentro del contenedor */
+}
+
+/* Estilo para las imágenes */
+.movie-item img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Ajuste de los textos en cada película */
+.movie-item p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 14px; /* Tamaño de fuente del texto */
+}
+
+
+
+
+
+
+
+/* Imagen de la serie */
+.serie-item img {
+   
+    transition: transform 0.5s ease; /* Transición para el efecto de zoom */
+}
+
+/* Efecto de zoom al pasar el ratón */
+.serie-item:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+}
+
+
+.link_caratula{
+    color: #fff;
+    text-decoration: none;
+   
+}
+
+
+.p_titulo {
+    max-width: 200px; /* Asegura que el texto no sea más ancho que la imagen */
+    overflow: hidden; /* Oculta el texto que se desborda del contenedor */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto si es demasiado largo */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    text-align: center; /* Centra el texto */
+    margin: 15px 0 0; /* Margen superior para separar el texto de la imagen */
+  }
+
+  /* Contenedor de cada tarjeta de serie */
+.serie-item {
+    display: flex;
+    flex-direction: column; /* Orientación de los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: flex-end; /* Alinea el texto al final del contenedor */
+    width: 200px; /* Asegura que todas las tarjetas tengan el mismo ancho */
+    margin: 10px; /* Margen para el espaciado entre tarjetas */
+    padding: 10px; /* Espaciado interno para darle un poco de aire */
+  }
+  
+  /* Imagen de la serie */
+  .serie-item img {
+    width: 100%; /* Asegura que la imagen tenga el ancho del contenedor */
+    min-height: 300px; /* Altura mínima para asegurar la alineación */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin deformarse */
+    margin-bottom: 10px; /* Margen inferior para separar la imagen del nombre */
+  }
+  
+  /* Título de la serie */
+  .p_titulo {
+    max-width: 100%; /* El título no será más ancho que el contenedor de la imagen */
+    overflow: hidden; /* Oculta el texto que se desborda del contenedor */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    text-align: center; /* Centra el texto */
+  }
+
+
+  .none{
+    list-style-type: none;
+  }
+
+  .titulo{
+    color: #fff;
+  }
+
+  /* Estilos del Footer */
+.footer {
+    background-color: #1d1d24;
+    color: white;
+    padding: 40px 0; /* Espacio superior e inferior */
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 1);
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Asegura que el footer ocupe todo el ancho de la pantalla */
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+    height: 387px;
+}
+
+/* Contenedor del contenido del Footer */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Opcional: Ajusta este valor si deseas limitar el ancho del contenido */
+    margin: 0 auto; /* Centra el contenido dentro del footer */
+    padding: 0 20px; /* Ajusta el espacio lateral dentro del footer */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+/* Sección del Footer */
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px; /* Añade un ancho mínimo para las secciones */
+}
+
+/* Título de la Sección del Footer */
+.footer-title {
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #FE532E, #F09619); /* Gradiente de color */
+    -webkit-background-clip: text; /* Recorta el fondo al texto para navegadores WebKit */
+    -moz-background-clip: text; /* Recorta el fondo al texto para navegadores Mozilla */
+    background-clip: text; /* Recorta el fondo al texto */
+    color: transparent; /* Hace el color del texto transparente para mostrar el gradiente */
+    margin-bottom: 20px;
+}
+
+/* Texto del Footer */
+.footer-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Enlaces del Footer */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #EDBC4C;
+}
+
+/* Pie del Footer */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #adadad;
+    background-color: #222222;
+}
+
+.p_titu{
+    width: 100vh;
+}
+
+.error {
+    color: rgb(236, 0, 0);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    font-weight: bold;
+  }
+
+
+  
+  .detalles-clic {
+    display: flex; /* Para alinear los elementos horizontalmente */
+    justify-content: center; /* Para centrar el contenido horizontalmente */
+    align-items: center; /* Para centrar el contenido verticalmente */
+    margin: 0 auto; /* Asegura que esté centrado dentro del contenedor padre */
+    max-width: 1200px; /* Puedes ajustar este valor según el ancho que prefieras */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  .imagen-detalle {
+    margin-right: 20px; /* Espacio entre la imagen y la descripción */
+    flex-shrink: 0; /* Evita que la imagen se encoja si el espacio es limitado */
+  }
+  
+  .descripción-detalle {
+    max-width: 1500px; /* Limita el ancho de la descripción */
+  }
+  
+  .img-fluid {
+    max-width: 100%; /* Asegura que la imagen sea responsiva */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+  .h6_detalles{
+    margin-top: 30px;
+
+}
+
+.h3{
+    margin-top: 40px; 
+}
+
+
+.descripción {
+    margin-top: 10px; /* Margen superior para separar el párrafo */
+}
+
+.hero-section {
+    position: relative; /* Contenedor relativo para posicionar elementos hijos */
+    width: 100%; /* Toma todo el ancho disponible */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+  
+  .background-image {
+    width: 100%; /* Imagen de fondo se ajusta al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+  }
+
+  .btn-detalle {
+    position: absolute; /* Posiciona el botón absolutamente dentro del contenedor */
+    bottom: 20px; /* Espacio desde el fondo del contenedor */
+    left: 20px; /* Espacio desde el lado izquierdo del contenedor */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #ff8c00; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño del texto del botón */
+  }
+  
+  .btn-detalle:hover {
+    background-color: #e07a00; /* Cambia el color del botón al pasar el cursor */
+  }
+
+  .btn-link {
+    background: linear-gradient(to right, #FE532E, #F09619); /* Gradiente de color */
+    -webkit-background-clip: text; /* Recortar el fondo al texto para navegadores WebKit */
+    -moz-background-clip: text; /* Recortar el fondo al texto para navegadores Mozilla */
+    background-clip: text; /* Recortar el fondo al texto */
+    color: transparent; /* Hacer el color del texto transparente para mostrar el gradiente */
+    font-weight: bold;
+    text-decoration: none; /* Sin subrayado */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    transition: color 0.3s ease; /* Transición suave para hover */
+}
+
+.btn-link:hover {
+    background: linear-gradient(to right, #9b321b, #915a0e); /* Gradiente de color */
+    -webkit-background-clip: text; /* Recortar el fondo al texto para navegadores WebKit */
+    -moz-background-clip: text; /* Recortar el fondo al texto para navegadores Mozilla */
+    background-clip: text; /* Recortar el fondo al texto */
+    color: transparent; /* Hacer el color del texto transparente para mostrar el gradiente */
+    font-weight: bold;
+    text-decoration: none; /* Sin subrayado */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    transition: color 0.3s ease; /* Transición suave para hover */
+}
+
+
+.link_inicio {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+

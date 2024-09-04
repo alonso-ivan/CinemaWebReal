@@ -1,0 +1,134 @@
+.b_inicio {
+    background-color: #25262E;
+}
+
+.link_inicio {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.i {
+    width: 170px;  /* Ancho fijo */
+    height: 100px; /* Alto fijo, ajusta según sea necesario */
+    object-fit: contain; /* Mantiene la relación de aspecto sin distorsionar la imagen */
+    max-width: none; /* Asegura que no se reduzca más allá del tamaño especificado */
+    max-height: none; /* Asegura que no se reduzca más allá del tamaño especificado */
+}
+
+
+
+.li_inicio {
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.username_inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.username_inicio img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.box_search{
+    border-radius: 50px;
+    background: linear-gradient(to right, #FE532E, #F09619);
+    border-color: #25262E;
+    font-weight: bold;
+    color: black;
+    width: 273px;
+    height: 43px;
+}
+
+.box_search:focus {
+    color: black; /* Mantiene el texto blanco cuando se enfoca */
+    outline: none; /* Elimina el borde de enfoque */
+}
+
+.top_peliculas{
+    color: #fff;
+}
+
+
+.top_peliculas {
+    padding: 20px;
+    
+}
+
+.peliculas-container {
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos se envuelvan en la siguiente línea */
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.pelicula-item {
+    flex: 0 0 auto; /* Evita que los elementos se reduzcan o se expandan */
+    margin-right: 20px; /* Espacio entre elementos */
+    text-align: center; /* Centra el texto y la imagen */
+    margin-right: 50px;
+}
+
+.peliculas-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.top_series{
+    color: #fff;
+}
+
+
+.top_series {
+    padding: 20px;
+}
+
+.series-container {
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos se envuelvan en la siguiente línea */
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.serie-item {
+    flex: 0 0 auto; /* Evita que los elementos se reduzcan o se expandan */
+    margin-right: 20px; /* Espacio entre elementos */
+    text-align: center; /* Centra el texto y la imagen */
+    margin-right: 50px;
+}
+
+.series-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo{
+    margin-left: 75px;
+}
+
+
+/* Estilos para el div .recomendación */
+
+
+.btn_inicio{
+    color: black;
+    background: linear-gradient(to right, #FE532E, #F09619);
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    margin-top: 27px;
+    margin-bottom: 27px;
+    height: 48px;
+    width: 166px;
+    font-weight: bold;
+}
